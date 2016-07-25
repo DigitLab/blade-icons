@@ -43,7 +43,7 @@ class BladeIconsServiceProvider extends ServiceProvider
 
     protected function registerConfig()
     {
-        $configPath = __DIR__ . '/../config/icon.php';
+        $configPath = __DIR__.'/../config/icon.php';
 
         $this->publishes([$configPath => config_path('icon.php')]);
 
