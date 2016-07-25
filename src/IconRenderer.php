@@ -51,7 +51,7 @@ class IconRenderer
      */
     public function __construct(Filesystem $files, array $paths, $cachePath)
     {
-        if (! $cachePath) {
+        if (!$cachePath) {
             throw new InvalidArgumentException('Please provide a valid cache path.');
         }
 
@@ -104,7 +104,7 @@ class IconRenderer
     /**
      * Get the fully qualified location of the view.
      *
-     * @param  string  $name
+     * @param string $name
      *
      * @return string
      */
@@ -120,11 +120,12 @@ class IconRenderer
     /**
      * Find the given view in the list of paths.
      *
-     * @param  string  $name
-     * @param  array   $paths
-     * @return string
+     * @param string $name
+     * @param array  $paths
      *
      * @throws \InvalidArgumentException
+     *
+     * @return string
      */
     protected function findInPaths($name, $paths)
     {
@@ -161,8 +162,8 @@ class IconRenderer
     /**
      * Get the path to the compiled version of an icon.
      *
-     * @param string  $path
-     * @param array   $attributes
+     * @param string $path
+     * @param array  $attributes
      *
      * @return string
      */
@@ -204,7 +205,7 @@ class IconRenderer
     {
         $compiled = $this->getCompiledPath($path, $attributes);
 
-        if (! $this->files->exists($compiled)) {
+        if (!$this->files->exists($compiled)) {
             return true;
         }
 
