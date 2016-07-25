@@ -19,7 +19,7 @@ composer require digitlab/blade-icons
 Add the service provider in app/config/app.php:
 
 ```php
-DigitLab\AdaptiveView\BladeIconsServiceProvider::class,
+DigitLab\BladeIcons\BladeIconsServiceProvider::class,
 ```
 
 Create the cache path (defaults to /storage/framework/icons) and resource path (defaults to /resources/svgs) as 
