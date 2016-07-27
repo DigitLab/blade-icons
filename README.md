@@ -44,4 +44,4 @@ It is suggested that you add the following css to style your icons:
 
 ## License
 
-Adaptive View is licensed under [The MIT License (MIT)](LICENSE).
+Blade Icons is licensed under [The MIT License (MIT)](LICENSE).
