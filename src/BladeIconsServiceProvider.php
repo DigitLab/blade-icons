@@ -18,6 +18,10 @@ class BladeIconsServiceProvider extends ServiceProvider
         $blade = $this->app['view']->getEngineResolver()->resolve('blade')->getCompiler();
 
         $blade->directive('icon', function ($expression) {
+            if ($expression[0] != '(') {
+                $expression = '('.$expression.')';
+            }
+
             return "<?php echo app('icon.renderer')->render$expression; ?>";
         });
     }
